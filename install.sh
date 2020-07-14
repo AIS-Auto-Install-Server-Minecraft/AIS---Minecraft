@@ -33,7 +33,6 @@ function choose_spigot_version {
     rm Spigot-1.7.10.zip
     echo "* Done ! Your server is ready !"
   else
-    # run welcome script again
     echo "Installation canceled !"
     exit 1
   fi
@@ -46,7 +45,6 @@ function choose_instance {
   if [[ "$CONFIRM" =~ [Spigot] ]]; then
     choose_spigot_version
   else
-    # run welcome script again
     echo "Installation canceled !"
     exit 1
   fi
@@ -59,7 +57,6 @@ function main {
     install_dependencies
     choose_instance
   else
-    # run welcome script again
     echo "Installation canceled !"
     exit 1
   fi
