@@ -206,9 +206,9 @@ function choose_travertine_version {
 function choose_instance {
   echo -e -n "\n* Which instance do you want to install? Available : "
   echo -e "\n-> Spigot"
-  echo -e "\n-> Thermos"
-  echo -e "\n-> Contigo"
-  echo -e "\n-> Travertine"
+  #echo -e "\n-> Thermos"
+  #echo -e "\n-> Contigo"
+  #echo -e "\n-> Travertine"
   
   read -r CONFIRM2
   if [[ "$CONFIRM2" =~ [Spigot] ]]; then
