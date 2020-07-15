@@ -33,7 +33,7 @@ function choose_spigot_version {
   echo -e "\n-> 1.15"
   echo -e "\n-> 1.16.1"
   read -r CONFIRM3
-  if [[ "$CONFIRM3" =~ [1.7.10] ]]; then
+  if [[ "$CONFIRM3" == "1.7.10" ]]; then
   	mkdir /home/Spigot-1.7.10
     echo "* Downloading Spigot-1.7.10..."
     wget https://github.com/AIS-Auto-Install-Server-Minecraft/AIS---Minecraft/raw/1.7.10/Spigot-1.7.10.zip /home/Spigot-1.7.10
@@ -43,7 +43,7 @@ function choose_spigot_version {
     rm Spigot-1.7.10.zip
     echo "* Done ! Your server is ready !"
 
-  elif [[ "$CONFIRM3" =~ [1.8] ]]; then
+  elif [[ "$CONFIRM3" == "1.8" ]]; then
   	mkdir /home/Spigot-1.8
     echo "* Downloading Spigot-1.8..."
     wget https://github.com/AIS-Auto-Install-Server-Minecraft/AIS---Minecraft/raw/1.8/Spigot-1.8.zip /home/Spigot-1.8
@@ -53,7 +53,7 @@ function choose_spigot_version {
     rm Spigot-1.8.zip
     echo "* Done ! Your server is ready !"
 
-  elif [[ "$CONFIRM3" =~ [1.9] ]]; then
+  elif [[ "$CONFIRM3" == "1.9" ]]; then
   	mkdir /home/Spigot-1.9
     echo "* Downloading Spigot-1.9..."
     wget https://github.com/AIS-Auto-Install-Server-Minecraft/AIS---Minecraft/raw/1.9/Spigot-1.9.zip /home/Spigot-1.9
@@ -63,7 +63,7 @@ function choose_spigot_version {
     rm Spigot-1.9.zip
     echo "* Done ! Your server is ready !"
 
-  elif [[ "$CONFIRM3" =~ [1.9.4] ]]; then
+  elif [[ "$CONFIRM3" == "1.9.4" ]]; then
   	mkdir /home/Spigot-1.9.4
     echo "* Downloading Spigot-1.9.4..."
     wget https://github.com/AIS-Auto-Install-Server-Minecraft/AIS---Minecraft/raw/1.9.4/Spigot-1.9.4.zip /home/Spigot-1.9.4
@@ -73,7 +73,7 @@ function choose_spigot_version {
     rm Spigot-1.9.4.zip
     echo "* Done ! Your server is ready !"
 
-  elif [[ "$CONFIRM3" =~ [1.10] ]]; then
+  elif [[ "$CONFIRM3" == "1.10" ]]; then
   	mkdir /home/Spigot-1.10
     echo "* Downloading Spigot-1.10..."
     wget https://github.com/AIS-Auto-Install-Server-Minecraft/AIS---Minecraft/raw/1.10/Spigot-1.10.zip /home/Spigot-1.10
@@ -83,7 +83,7 @@ function choose_spigot_version {
     rm Spigot-1.10.zip
     echo "* Done ! Your server is ready !"
 
-  elif [[ "$CONFIRM3" =~ [1.11] ]]; then
+  elif [[ "$CONFIRM3" == "1.11" ]]; then
   	mkdir /home/Spigot-1.11
     echo "* Downloading Spigot-1.11..."
     wget https://github.com/AIS-Auto-Install-Server-Minecraft/AIS---Minecraft/raw/1.11/Spigot-1.11.zip /home/Spigot-1.11
@@ -93,7 +93,7 @@ function choose_spigot_version {
     rm Spigot-1.11.zip
     echo "* Done ! Your server is ready !"
 
-  elif [[ "$CONFIRM3" =~ [1.12] ]]; then
+  elif [[ "$CONFIRM3" == "1.12" ]]; then
   	mkdir /home/Spigot-1.12
     echo "* Downloading Spigot-1.12..."
     wget https://github.com/AIS-Auto-Install-Server-Minecraft/AIS---Minecraft/raw/1.12/Spigot-1.12.zip /home/Spigot-1.12
@@ -104,7 +104,7 @@ function choose_spigot_version {
     rm Spigot-1.12.zip
     echo "* Done ! Your server is ready !"
 
-  elif [[ "$CONFIRM3" =~ [1.13] ]]; then
+  elif [[ "$CONFIRM3" == "1.13" ]]; then
   	mkdir /home/Spigot-1.13
     echo "* Downloading Spigot-1.13..."
     wget https://github.com/AIS-Auto-Install-Server-Minecraft/AIS---Minecraft/raw/1.13/Spigot-1.13.zip /home/Spigot-1.13
@@ -115,7 +115,7 @@ function choose_spigot_version {
     rm Spigot-1.13.zip
     echo "* Done ! Your server is ready !"
 
-  elif [[ "$CONFIRM3" =~ [1.14] ]]; then
+  elif [[ "$CONFIRM3" == "1.14" ]]; then
   	mkdir /home/Spigot-1.14
     echo "* Downloading Spigot-1.14..."
     wget https://github.com/AIS-Auto-Install-Server-Minecraft/AIS---Minecraft/raw/1.4/Spigot-1.14.zip /home/Spigot-1.14
@@ -126,7 +126,7 @@ function choose_spigot_version {
     rm Spigot-1.14.zip
     echo "* Done ! Your server is ready !"
 
-  elif [[ "$CONFIRM3" =~ [1.15] ]]; then
+  elif [[ "$CONFIRM3" == "1.15" ]]; then
   	mkdir /home/Spigot-1.15
     echo "* Downloading Spigot-1.15..."
     wget https://github.com/AIS-Auto-Install-Server-Minecraft/AIS---Minecraft/raw/1.15/Spigot-1.15.zip /home/Spigot-1.15
@@ -137,7 +137,7 @@ function choose_spigot_version {
     rm Spigot-1.15.zip
     echo "* Done ! Your server is ready !"
 
-   elif [[ "$CONFIRM3" =~ [1.16.1] ]]; then
+   elif [[ "$CONFIRM3" == "1.16.1" ]]; then
   	mkdir /home/Spigot-1.16.1
     echo "* Downloading Spigot-1.16.1..."
     wget https://github.com/AIS-Auto-Install-Server-Minecraft/AIS---Minecraft/raw/1.16.1/Spigot-1.16.1.zip /home/Spigot-1.16.1
@@ -188,7 +188,7 @@ function choose_travertine_version {
   echo -e -n "\n* Which version do you want to install? Available Travertine version : "
   echo -e "\n-> V153"
   read -r CONFIRM4
-  if [[ "$CONFIRM4" =~ [V153] ]]; then
+  if [[ "$CONFIRM4" == "V153" ]]; then
   	mkdir /home/Travertine-153
     echo "* Downloading Travertine-153..."
     wget https://github.com/AIS-Auto-Install-Server-Minecraft/AIS---Minecraft/raw/Travertine/Travertine-153.zip /home/Travertine-153
@@ -206,21 +206,21 @@ function choose_travertine_version {
 function choose_instance {
   echo -e -n "\n* Which instance do you want to install? Available : "
   echo -e "\n-> Spigot"
-  #echo -e "\n-> Thermos"
-  #echo -e "\n-> Contigo"
-  #echo -e "\n-> Travertine"
+  echo -e "\n-> Thermos"
+  echo -e "\n-> Contigo"
+  echo -e "\n-> Travertine"
   
   read -r CONFIRM2
-  if [[ "$CONFIRM2" =~ [Spigot] ]]; then
+  if [[ "$CONFIRM2" == "Spigot" ]]; then
     choose_spigot_version
 
-  elif [[ "$CONFIRM2" =~ [Thermos] ]]; then
+  elif [[ "$CONFIRM2" == "Thermos" ]]; then
     thermos
 
-  elif [[ "$CONFIRM2" =~ [Contigo] ]]; then
+  elif [[ "$CONFIRM2" == "Contigo" ]]; then
     contigo
 
-  elif [[ "$CONFIRM2" =~ [Travertine] ]]; then
+  elif [[ "$CONFIRM2" == "Travertine" ]]; then
     choose_travertine_version
 
   else
