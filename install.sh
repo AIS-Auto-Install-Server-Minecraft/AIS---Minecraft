@@ -184,13 +184,31 @@ function thermos {
     echo "* Done ! Your server is ready !"
 }
 
+function choose_travertine_version {
+  echo -e -n "\n* Which version do you want to install? Available Travertine version : "
+  echo -e "\n-> V153"
+  read -r CONFIRM
+  if [[ "$CONFIRM" =~ [V153] ]]; then
+  	mkdir /home/Travertine-153
+    echo "* Downloading Travertine-153..."
+    wget https://github.com/AIS-Auto-Install-Server-Minecraft/AIS---Minecraft/raw/Travertine/Travertine-153.zip /home/Travertine-153
+    echo "* Download complete!"
+    echo "* Server installation..."
+    unzip Travertine-153.zip
+    rm Travertine-153.zip
+    echo "* Done ! Your server is ready !"
+
+  else
+    echo "Installation canceled !"
+    exit 1
+  fi
+}
 function choose_instance {
   echo -e -n "\n* Which instance do you want to install? Available : "
   echo -e "\n-> Spigot"
   echo -e "\n-> Thermos"
   echo -e "\n-> Contigo"
-  #echo -e "\n-> BungeeCord"
-  #echo -e "\n-> Travertine"
+  echo -e "\n-> Travertine"
   
   read -r CONFIRM
   if [[ "$CONFIRM" =~ [Spigot] ]]; then
@@ -200,8 +218,10 @@ function choose_instance {
     thermos
 
   elif [[ "$CONFIRM" =~ [Contigo] ]]; then
-    thermos
+    contigo
 
+  elif [[ "$CONFIRM" =~ [Travertine] ]]; then
+    choose_travertine_version
 
   else
     echo "Installation canceled !"
